@@ -7,5 +7,10 @@ namespace YouthSportsRegistration.Models
 {
     public class Organization
     {
+        public int Id { get; set; }
+
+
+
+
     }
 }
