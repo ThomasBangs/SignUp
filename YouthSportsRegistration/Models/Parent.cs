@@ -14,11 +14,11 @@ namespace YouthSportsRegistration.Models
         public string Address { get; set; }
         public string Phone { get; set; }
 
-        public List<Child> Children { get; set; }
+        public List<Child> Child_List { get; set; }
 
         public Parent()
         {
-            Children = new List<Child>();
+            Child_List = new List<Child>();
         }
 
     }

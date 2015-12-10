@@ -18,9 +18,9 @@ namespace YouthSportsRegistration.Tests
         {
             Parent parent = new Parent { FirstName="Betty"};
             Child child = new Child { FirstName = "Jimmy" };
-            parent.Children.Add(child);
+            parent.Child_List.Add(child);
 
-            Assert.AreEqual(1, parent.Children.Count);
+            Assert.AreEqual(1, parent.Child_List.Count);
             Assert.AreEqual(parent.FirstName, "Betty");
             Assert.AreEqual(child.FirstName, "Jimmy");
         }
@@ -30,11 +30,11 @@ namespace YouthSportsRegistration.Tests
         {
             Parent parent = new Parent();
             Child child = new Child { FirstName="tommy",  Address= "231 amherst dr"};
-            parent.Children.Add(child);
+            parent.Child_List.Add(child);
 
-            parent.Children.Remove(child);
+            parent.Child_List.Remove(child);
 
-            Assert.AreEqual(0, parent.Children.Count);
+            Assert.AreEqual(0, parent.Child_List.Count);
 
         }
 
