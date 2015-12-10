@@ -13,7 +13,13 @@ namespace YouthSportsRegistration.Models
         public string LastName { get; set; }
         public string Address { get; set; }
         public string Phone { get; set; }
-        public ApplicationUser Email { get; set; }
+
+        public List<Child> Children { get; set; }
+
+        public Parent()
+        {
+            Children = new List<Child>();
+        }
 
     }
 }
