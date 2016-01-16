@@ -8,11 +8,23 @@ namespace YouthSportsRegistration.Tests
     [TestClass]
     public class ChildTest
     {
+        private Child c;
+
+        [TestInitialize]
+        public void Setup()
+        {
+            c = new Child();
+        }
         [TestMethod]
         public void ChildEnsureThatICanCreateInstance()
         {
-            Child player = new Child();
-            Assert.IsNotNull(player);
+           
+            Assert.IsNotNull(c);
+        }
+        [TestMethod]
+        public void ChildTestThatChildHasFirstName()
+        {
+
         }
     }
 }
